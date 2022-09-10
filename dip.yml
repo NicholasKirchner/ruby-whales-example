@@ -51,6 +51,13 @@ interaction:
         compose:
           run_options: [service-ports, use-aliases]
 
+  test:
+    description: Run minitest commands
+    service: rails
+    environment:
+      RAILS_ENV: test
+    command: bundle exec rails test
+
   yarn:
     description: Run Yarn commands
     service: rails
