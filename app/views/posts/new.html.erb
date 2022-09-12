@@ -1,0 +1,11 @@
+<div class="new-post">
+  <%= form_with(model: @post) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :url %>
+    <%= f.text_field :url %>
+
+    <%= f.submit "Create my post" %>
+  <% end %>
+</div>
